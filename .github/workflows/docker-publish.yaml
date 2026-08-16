@@ -21,6 +21,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push Docker image
-        run: |
+        run:
           docker build . --tag ghcr.io/jinka06/skills-publish-docker-images/stackoverflown:main
           docker push ghcr.io/jinka06/skills-publish-docker-images/stackoverflown:main
